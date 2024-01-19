@@ -8,7 +8,15 @@
 </head>
 
 <body>
-<h1>投稿一覧</h1>
+    <h1>投稿一覧</h1>
+    @foreach ($posts as $post)
+        <ul>
+            <li>
+                <h2>{{ $post->title }}</h2>
+                <p>{{ $post->content }}</p>
+            </li>
+        </ul>
+    @endforeach
 </body>
 
 </html>
